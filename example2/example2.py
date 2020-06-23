@@ -3,7 +3,7 @@ def simple_decorator(func):
         print("Hey I am decorating you buddy")
         func(*args, *kwargs)
         print("I decorated you.")
-    return wrapper
+    return wrapper2
 
 @simple_decorator
 def decorate_me(arg1, arg2):
