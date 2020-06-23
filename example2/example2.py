@@ -1,5 +1,5 @@
 def simple_decorator(func):
-    def wrapper(*args, **kwargs):
+    def wrapper2(*args, **kwargs):
         print("Hey I am decorating you buddy")
         func(*args, *kwargs)
         print("I decorated you.")
