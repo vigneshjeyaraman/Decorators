@@ -1,10 +1,10 @@
 
 def simple_decorator(func):
-    def wrapper():
-        print("Hey I am decorating you buddy")
+    def wrapper1():
+        print("Hey, I am decorating you buddy")
         func()
         print("I decorated you.")
-    return wrapper
+    return wrapper1
 
 @simple_decorator
 def decorate_me():
