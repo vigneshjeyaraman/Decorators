@@ -3,7 +3,7 @@ import functools
 
 def simple_decorator(func):
     @functools.wraps(func)
-    def wrapper3(*args, **kwargs):
+    def wrapper4(*args, **kwargs):
         print("Hey, I am decorator printing")
         func(*args, **kwargs)
     return wrapper3
