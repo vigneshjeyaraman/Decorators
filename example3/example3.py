@@ -1,4 +1,6 @@
+import functools
 def simple_decorator(func):
+    @functools.wraps(func)
     def wrapper3():
         print("Hey, I am decorator printing")
         func()
