@@ -4,11 +4,11 @@ import functools
 def simple_decorator(decorator_arg):
     def additional_wrapper(func):
         @functools.wraps(func)
-        def wrapper4(*args, **kwargs):
+        def wrapper5(*args, **kwargs):
             print(f"Hey, I am decorator printing and " \
                   f"this time decorator also got argument {decorator_arg}")
             func(*args, **kwargs)
-        return wrapper4
+        return wrapper5
     return additional_wrapper
 
 @simple_decorator(33)
