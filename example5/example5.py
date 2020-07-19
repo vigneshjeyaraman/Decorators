@@ -1,6 +1,3 @@
-import functools
-
-
 class Decorator:
     '''We will be using this class for decorating functions'''
     def __init__(self, arg1, arg2):
