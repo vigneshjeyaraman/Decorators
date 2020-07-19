@@ -4,7 +4,7 @@ class Decorator:
         self._fun = func
     
     def __call__(self, a, b):
-        print("__call__ called before decorating function1")
+        print("__call__ called before decorating function2")
         self._fun(a,b)
     
     def class_method(self):
