@@ -11,8 +11,8 @@ class Decorator:
         print("I am called by a decorated function")
 
 @Decorator
-def function1(a, b):
+def function2(a, b):
     print(f"I am decorated and argument passed are {a}, {b}")
 
-function1(2,4)
-function1.class_method()
+function2(2,4)
+function2.class_method()
