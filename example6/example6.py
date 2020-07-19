@@ -2,6 +2,8 @@ import functools
 
 
 def count_calls(func):
+    '''Function to keep track how many times function is called'''
+
     @functools.wraps(func)
     def wrapper(*args, **kwargs):
         wrapper.count += 1
@@ -11,6 +13,7 @@ def count_calls(func):
     return wrapper
 
 def cache(func):
+    '''Function to store already calculated value in fibonacci'''
     @functools.wraps(func)
     def wrapper(*args, **kwargs):
         if args not in wrapper.cache:
